@@ -6367,10 +6367,11 @@ body {
 
 .content h1 {
   text-align: center;
-  font: bold 1.8em strong;
+  font: bold 1.8em;
   font-family: 'Lora', serif; }
 .content p {
-  padding: 1.5em;
+  padding: 1em 4.5em 0em;
+  margin: 1em;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.3em; }
 
