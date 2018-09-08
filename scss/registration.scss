@@ -32,7 +32,8 @@ body{
 	}
 }
 
-.logreg{
+.reg{
+	text-align: center;
 	padding: 1.3em;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 	font-size: 1.3em;
@@ -43,7 +44,7 @@ body{
 	}
 
 	input{
-		width: 50%;
+		width: 40%;
 		padding: 0.5em;
 		margin: 0.2em;
 	}

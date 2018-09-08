@@ -6346,9 +6346,9 @@ body {
   background-color: #F9F9F9; }
 
 .header {
-  text-align: center;
   font-size: 1.3em;
-  color: #006622; }
+  color: #006622;
+  text-align: center; }
 
 .navbar {
   display: block;
@@ -6365,16 +6365,24 @@ body {
       background-color: #006622;
       color: #ffffff; }
 
-.content h1 {
-  margin: 0.5em;
+.reg {
   text-align: center;
-  font: bold 1.8em;
-  font-family: 'Lora', serif; }
-.content p {
-  padding: 0.2em 4.5em 0em;
-  margin: 1em;
+  padding: 1.3em;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 1.4em; }
+  font-size: 1.3em; }
+  .reg h1 {
+    font: bold 1.8em strong;
+    font-family: 'Lora', serif; }
+  .reg input {
+    width: 40%;
+    padding: 0.5em;
+    margin: 0.2em; }
+  .reg button {
+    width: 25%;
+    margin: .5em;
+    font-size: 0.8em;
+    background-color: #d6d6c2;
+    border-radius: .6em; }
 
 .footer {
   background-color: #ffad33;
@@ -6397,4 +6405,4 @@ body {
       background-color: #006622;
       color: #ffffff; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=registration.css.map */

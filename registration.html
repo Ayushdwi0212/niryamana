@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/reglogin.css"></style>
+	<link rel="stylesheet" href="css/registration.css"></style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Neucha|M+PLUS+Rounded+1c">
-	<title>निर्यमणा: Register or Login</title>
+	<title>निर्यमणा: A Home for Volunteers from your community</title>
 </head>
 
 <body>
@@ -21,37 +21,17 @@
 	</nav>
 
 	<section>
-		<div class="columns">
-			
-			<div class="column">
-				<form class="logreg">
-					<h1>Already a member?<br />Please login from here:</h1>
+		<form class="reg">
+			<h1>Just a few more details, and you're good to go.</h1>
 
-					<p>Username:</p>
-					<input type="text" name="userName"><br />
-					<p>Password:</p>
-					<input type="password" name="password">
-					<p style="font-size: 0.6em"><a href="">Forgot your password?</a></p>
-					<button>Login</button>
-				</form>
-			</div>
-
-			<div class="column">
-				<form class="logreg" method="get" action="C:/Users/Anurag/Dropbox/My Documents/My Works/Mein Web-dev Projects/niryamana/registration.html">
-					<h1>Want to join the initiative? Please fill out these fields to get started:</h1>
-
-					<p>First Name:</p>
-					<input type="text" name="firstName">
-					<p>Last Name:</p>
-					<input type="text" name="lastName">
-					<p>Middle Name (optional):</p>
-					<input type="text" name="middleName">
-					<p>Location:</p>
-					<input type="text" name=""><br />
-					<button>Continue</button>
-				</form>
-			</div>
-		</div>
+			<p>Your e-mail address</p>
+			<input type="email" name="email">
+			<p>Password (should be at least 8 letters long, with a capital letter, a small letter, a number, and a special symbol)</p>
+			<input type="password" name="password">
+			<p>Please confirm the password you've written above</p>
+			<input type="password" name="passwordConfirm"><br />
+			<button>Submit</button>
+		</form>
 	</section>
 
 	<footer class="footer">
