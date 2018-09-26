@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="stylesheet" href="home2.css"></style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+<title>निर्यमणा: A Home for Volunteers from your community</title></head>
+<body>
+<div class="outer">
+ <div class="header">
+ <header id="header">
+ <p><b>निर्यमणा<br />
+ <em>To help and be helped</em></b></p>
+ </header>
+ </div>
+ <div class="nav">
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a>About</a></li>
+ <li><a class="login">Login/Register</a></li></ul>
+ </nav>
+ </div>	
+ <div class="section">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://hocps.blob.core.windows.net/00006c/images/Joining%20Hands%20600x450.png" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://hocps.blob.core.windows.net/00006c/images/Kerala%20600.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://hocps.blob.core.windows.net/00006c/images/Discover%20600x450.png" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<section>
+
+<div class="article">
+<article>
+<h1><b>Volunteer for your people, your community, for yourself</b></h1>
+
+			
+<p>The idea of volunteering has taken on a completely different form than what was its originally envisioned. The modern volunteer works for an organization to help people of a specific group. While there's nothing wrong with the idea itself, there exists an unaddressed fundamental problem; the fundamentals. The grassroots, which nurture the social behemoth we live in, are left untended because of the focus on the niche.</p>
+
+		<br />	<h1><b>Returning to where it begins</b></h1>
+
+			<p>The world is a large, heterogeneous amalgamation of variegated people, ideas, and constructs, and there are things aplenty which we cannot change, regardless of how much we believe they need to be changed. The impossibility of bringing about the difference we so covet leads to a pain we are all too familiar with. Still, we press on, hoping to fix things, to change them for the better.</p>
+
+			<p><em>Niryamana</em> understands this struggle. We believe that everyone has the capability to change things, and that the place one lives in is a world unto itself. So what if we can't change the world? We still have the power to change our world, the place we belong to. That, is what we're about; being the instrument to the difference only you can make, to the world only you can see.</p>
+
+		<br />	<h1><b>What are we?</b></h1>
+
+			<p><em>Niryamana</em> is an initiative to promote the idea of volunteerism as it originally was. We intend to bring together people who believe in championing the change they want to see in their society. We provide a platform to the people, so that they can come together and voluntarily work for the betterment of the place they live in.</p>
+
+			<p>The core purpose of <em>Niryamana</em> is to bring people together, so that they can solve the problems in their localities, otherwise left to the governing bodies, on their own. Be it the unclogging of that clogged drainage, or the disposal of the ever-increasing pile of trash, there are a whole slew of issues which can be resolved by the people themselves, without needing the intervention of any third party. <em>Niryamana</em> intends to be the platform where people can seek out other people who are willing to help out those in need.</p>
+		</article></div>
+	</section>
+</div>	
+<div class="footer">	
+<footer id="footer">
+		
+Niryamana is a non-profit initiative to connect people together in hopes of making Indian communities better. To know more about our mission and lend your support, do check out our About page and our social media pages. <br />
+			© Niryamana 2018. All rights reserved.<br /><br />
+			<ul>
+			<li><a>Contact Us</a></li>
+			<li><a>Facebook</a></li></ul>
+	</footer>
+	</div></div>
+</body>
+</html>
