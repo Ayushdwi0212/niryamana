@@ -6342,16 +6342,13 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-#main {
-  transition: margin-left .5s; }
-
 body {
   background-color: #fffbf9; }
 
 .header {
-  text-align: center;
   font-size: 1.3em;
-  color: #006622; }
+  color: #006622;
+  text-align: center; }
 
 .navbar {
   display: block;
@@ -6368,35 +6365,6 @@ body {
       background-color: #006622;
       color: #ffffff; }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffad33;
-  overflow-x: hidden;
-  padding-top: 1.3em;
-  transition: 0.4s; }
-  .sidenav a {
-    padding: 1.1em;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s; }
-    .sidenav a:hover {
-      background-color: #006622;
-      color: #ffffff; }
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0.8em;
-  font-size: 1.6em;
-  margin-left: .5em; }
-
 .content h1 {
   margin: 0.5em;
   text-align: center;
@@ -6407,17 +6375,47 @@ body {
   margin: 1em;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.4em; }
-.content img {
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  display: block; }
 
+/*.box1{
+	background-color: grey;
+
+	h1{
+		margin: 0.5em;
+		text-align: center;
+		font: bold 1.8em;
+		font-family: 'Lora', serif;
+	}
+
+	p{
+		padding: 0.2em 3em 0em;
+		margin: 1em;
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-size: 1.4em;
+	}
+}
+
+.box2{
+	background-color: blue;
+
+	h1{
+		margin: 0.5em;
+		text-align: center;
+		font: bold 1.8em;
+		font-family: 'Lora', serif;
+	}
+
+	p{
+		padding: 0.2em 3em 0em;
+		margin: 1em;
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-size: 1.4em;
+	}
+}*/
 .footer {
   background-color: #ffad33;
   overflow: hidden;
   padding: 1.5em 0em;
-  position: relative; }
+  position: absolute; }
   .footer p {
     text-align: center;
     float: left;
@@ -6434,4 +6432,4 @@ body {
       background-color: #006622;
       color: #ffffff; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */

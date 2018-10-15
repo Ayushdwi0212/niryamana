@@ -4,11 +4,10 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/reglogin.css">
+	<link rel="stylesheet" href="css/registration.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Neucha|M+PLUS+Rounded+1c">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-	<script type="text/javascript" src="/js/reglogin.js"></script>
-	<title>निर्यमणा: Register or Login</title>
+	<title>निर्यमणा: Forgot E-mail or Password?</title>
 </head>
 
 <body>
@@ -22,38 +21,11 @@
 		</ul>
 	</nav>
 
-	<section>
-		<div class="columns">
-			
-			<div class="column">
-				<form class="logreg" action="login.jsp">
-					<h1>Already a member?<br />Please login from here:</h1>
-
-					<p>Username:</p>
-					<input type="text" name="userName" required><br />
-					<p>Password:</p>
-					<input type="password" name="password" required>
-					<p style="font-size: 0.6em"><a href="forgotpass.html">Forgot your password?</a></p>
-					<button type="submit">Login</button>
-				</form>
-			</div>
-
-			<div class="column">
-				<form class="logreg" method="get" action="reglogin.jsp">
-					<h1>Want to join the initiative? Please fill out these fields to get started:</h1>
-
-					<p>First Name:</p>
-					<input type="text" name="firstName" required>
-					<p>Last Name:</p>
-					<input type="text" name="lastName" required>
-					<p>Middle Name (optional):</p>
-					<input type="text" name="middleName">
-					<p>Zip Code:</p>
-					<input type="text" name="zipCode" required><br />
-					<button type=submit>Continue</button>
-				</form>
-			</div>
-		</div>
+	<section class="reg">
+		<p>Please enter your e-mail if you've forgotten your password:</p>
+		<input type="text" name="e-mail"><br><br>
+		<p>In case that you've forgotten your e-mail address, then please enter your mobile number:</p>
+		<input type="text" name="mobno">
 	</section>
 
 	<footer class="footer">

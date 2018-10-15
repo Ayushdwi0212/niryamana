@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/registration.css"></style>
+	<link rel="stylesheet" href="css/registration.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Neucha|M+PLUS+Rounded+1c">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<title>निर्यमणा: A Home for Volunteers from your community</title>
 </head>
 
@@ -25,19 +26,22 @@
 			<h1>Just a few more details, and you're good to go.</h1>
 
 			<p>Your e-mail address</p>
-			<input type="email" name="email">
+			<input type="email" name="email" required>
 			<p>Password (should be at least 8 letters long, with a capital letter, a small letter, a number, and a special symbol)</p>
-			<input type="password" name="password">
+			<input type="password" name="password" minlength="8" required>
 			<p>Please confirm the password you've written above</p>
-			<input type="password" name="passwordConfirm"><br />
+			<input type="password" name="passwordConfirm" required><br />
 			<button type="submit">Submit</button>
 		</form>
 	</section>
 
 	<footer class="footer">
-		<p>Niryamana is a non-profit initiative to connect people together in hopes of making Indian communities better. To know more about our mission, do check out our About page and our social media pages. <br />
+		<p>Niryamana is a non-profit initiative to connect people together in hopes of making 
+		Indian communities better. To know more about our mission and lend your support, do 
+		check out our About page and our social media pages. <br />
 			© Niryamana 2018. All rights reserved.
 		</p>
+		
 		<ul>
 			<a><li>Contact Us</li></a>
 			<a><li>Facebook</li></a>

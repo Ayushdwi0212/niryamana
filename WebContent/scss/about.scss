@@ -32,31 +32,57 @@ body{
 	}
 }
 
-.reg{
-	text-align: center;
-	padding: 1.3em;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
-	font-size: 1.3em;
-
+.content{
 	h1{
-		font: bold 1.8em strong;
+		margin: 0.5em;
+		text-align: center;
+		font: bold 1.8em;
 		font-family: 'Lora', serif;
 	}
 
-	input{
-		width: 40%;
-		padding: 0.5em;
-		margin: 0.2em;
-	}
-
-	button{
-		width: 25%;
-		margin: .5em;
-		font-size: 0.8em;
-		background-color: #d6d6c2;
-		border-radius: .6em;
+	p{
+		padding: 0.2em 3em 0em;
+		margin: 1em;
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-size: 1.4em;
 	}
 }
+
+/*.box1{
+	background-color: grey;
+
+	h1{
+		margin: 0.5em;
+		text-align: center;
+		font: bold 1.8em;
+		font-family: 'Lora', serif;
+	}
+
+	p{
+		padding: 0.2em 3em 0em;
+		margin: 1em;
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-size: 1.4em;
+	}
+}
+
+.box2{
+	background-color: blue;
+
+	h1{
+		margin: 0.5em;
+		text-align: center;
+		font: bold 1.8em;
+		font-family: 'Lora', serif;
+	}
+
+	p{
+		padding: 0.2em 3em 0em;
+		margin: 1em;
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-size: 1.4em;
+	}
+}*/
 
 .footer{
 	background-color: #ffad33;
