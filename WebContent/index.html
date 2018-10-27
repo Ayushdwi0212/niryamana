@@ -13,17 +13,28 @@
 
 <div id="main">
 	<body>
-		<script type="text/javascript" src="js/home.js"></script>
-
 		<header class="header"><p><b>निर्यमणा<br /><em>To help and be helped</em></p></b></header>
 
 		<nav>
 			<ul class="navbar">
+				<i class="fas fa-user-circle fa-4x" id="userProfile" style="float: left; display: none;" onclick="openNav()"></i>
 				<a href="index.html"><li>Home</li></a>
 				<a href="about.html"><li>About</li></a>
-				<a href="reglogin.html" style="float: right;"><li>Login/Register</li></a>
+				<a id="logreg" href="reglogin.html" style="float: right;"><li>Login/Register</li></a>
 			</ul>
 		</nav>
+
+		<aside>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">Your Profile</a>
+				<a href="#">Help Requests</a>
+				<a href="#">Volunteering Requests</a>
+				<a href="#">Your Friends</a>
+				<a href="#">Your Groups</a>
+				<a href="#" onclick="signOut()">Logout</a>
+			</div>
+		</aside>
 
 		<section>
 			<article class="content">
@@ -64,4 +75,20 @@
 		</footer>
 	</body>
 </div>
+
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyAwj0S65tbfKXormqaslo-pooz1mDtFTvs",
+		authDomain: "niryamana-ac2dc.firebaseapp.com",
+		databaseURL: "https://niryamana-ac2dc.firebaseio.com",
+		projectId: "niryamana-ac2dc",
+		storageBucket: "niryamana-ac2dc.appspot.com",
+		messagingSenderId: "449429620964"
+	};
+
+	firebase.initializeApp(config);
+</script>
 </html>

@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="css/reglogin.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Neucha|M+PLUS+Rounded+1c">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-	<script type="text/javascript" src="/js/reglogin.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="js/reglogin.js"></script>
 	<title>निर्यमणा: Register or Login</title>
 </head>
 
@@ -26,7 +29,7 @@
 		<div class="columns">
 			
 			<div class="column">
-				<form class="logreg" action="login.jsp">
+				<form class="logreg" id="log" action="login.jsp" @submit.prevent="login">
 					<h1>Already a member?<br />Please login from here:</h1>
 
 					<p>Username:</p>
@@ -68,5 +71,19 @@
 			<a><li>Facebook</li></a>
 		</ul>
 	</footer>
+
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAwj0S65tbfKXormqaslo-pooz1mDtFTvs",
+			authDomain: "niryamana-ac2dc.firebaseapp.com",
+			databaseURL: "https://niryamana-ac2dc.firebaseio.com",
+			projectId: "niryamana-ac2dc",
+			storageBucket: "niryamana-ac2dc.appspot.com",
+			messagingSenderId: "449429620964"
+		};
+
+		firebase.initializeApp(config);
+	</script>
 </body>
 </html>
