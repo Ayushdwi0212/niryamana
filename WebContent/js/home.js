@@ -1,4 +1,5 @@
-var user = firebase.auth().currentUser;
+//Setup for display of User Profile logo
+var user = true;//Replace with firebase.auth().currentUser during actual implementation
 
 var profileIcon = document.getElementById("userProfile");
 if (user) {
@@ -8,27 +9,8 @@ else {
 	profileIcon.style.display = "none";
 }
 
-new Vue({
-    el: '#log',
-      data: {
-        email: '',
-        password: '',
-        displayName: null,
-        newPassword: null,
-        authUser: null,
-    },
 
-    methods: {
-        signIn () {
-            firebase.auth().signInWithEmailAndPassword(this.email, this.password).catch(error => alert('🤕' + error.message))
-        },
-
-        signOut () {
-            firebase.auth().signOut()
-        },
-    },
-})
-
+//Functions for opening and closing sidebar
 function openNav() {
     document.getElementById("mySidenav").style.width = "13.5em";
     document.getElementById("main").style.marginLeft = "13.5em";

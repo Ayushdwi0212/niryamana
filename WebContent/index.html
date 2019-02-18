@@ -17,22 +17,25 @@
 
 		<nav>
 			<ul class="navbar">
-				<i class="fas fa-user-circle fa-4x" id="userProfile" style="float: left; display: none;" onclick="openNav()"></i>
+				<!-- <i class="fas fa-user-circle fa-4x" id="userProfile" style="float: left; display: none;" onclick="openNav()"></i> -->
 				<a href="index.html"><li>Home</li></a>
+				<!-- <a href="community.html"><li>The Community</li></a> -->
 				<a href="about.html"><li>About</li></a>
 				<a id="logreg" href="reglogin.html" style="float: right;"><li>Login/Register</li></a>
+				<!-- <a href="#" onclick="signOut()">Logout</a> -->
 			</ul>
 		</nav>
 
 		<aside>
 			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">Your Profile</a>
-				<a href="#">Help Requests</a>
-				<a href="#">Volunteering Requests</a>
-				<a href="#">Your Friends</a>
-				<a href="#">Your Groups</a>
-				<a href="#" onclick="signOut()">Logout</a>
+				<span class="closebtn" onclick="closeNav()">
+					<i class="far fa-window-close"></i>
+				</span>
+				<a href="profile.html">Your Profile</a>
+				<a href="helpreq.html">Help Requests</a>
+				<a href="volunreq.html">Volunteering Requests</a>
+				<a href="friends.html">Your Friends</a>
+				<a href="groups.html">Your Groups</a>
 			</div>
 		</aside>
 

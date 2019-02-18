@@ -29,11 +29,16 @@
 			<h1>Just a few more details, and you're good to go.</h1>
 
 			<p>Your e-mail address</p>
-			<input type="email" name="email" required>
+			<input type="email" name="email" id="email" required autofocus pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+			<p style="display: none;">Your e-mail address is invalid. Please enter a valid e-mail address.</p>
+			
 			<p>Password (should be at least 8 letters long, with a capital letter, a small letter, a number, and a special symbol)</p>
-			<input type="password" name="password" minlength="8" required>
+			<input type="password" name="password" minlength="8" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
+			<p style="display: none;">The password should not be the same as the e-mail address. Please enter a unique password.</p>
+			
 			<p>Please confirm the password you've written above</p>
-			<input type="password" name="passwordConfirm" required><br />
+			<input type="password" name="passwordConfirm" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"><br />
+			<p style="display: none;">The entered password does not match. Please try again.</p>
 			<button type="submit">Submit</button>
 		</form>
 	</section>
